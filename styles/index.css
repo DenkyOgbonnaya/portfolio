@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+body {
+  font-family: "open sans";
+  margin: 0;
+  padding: 0;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+  background-color: #6610f2;
+}
+header .bio {
+  display: flex;
+}
+.bio img {
+  width:  50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+header span {
+  color: #ffff;
+  font-size: 1rem;
+  font-weight: 600;
+  align-self: center;
+}
+nav ul {
+  list-style-type: none;
+}
+nav ul li {
+  display: inline;
+  color: #ffff;
+  text-transform: uppercase;
+  margin-right: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+nav ul li:hover {
+    color: #fd7e14;
+    cursor: pointer;
+}
