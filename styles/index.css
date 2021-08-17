@@ -103,7 +103,6 @@ section:first-child {
   color: #6610f2;
   align-self: center;
   text-transform: uppercase;
-  
 }
 .service small {
   opacity: 0.8;
@@ -121,13 +120,13 @@ hr {
   border-color: whitesmoke;
 }
 
-/**** services ****/
+/**** projects ****/
 .projects {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 70%;
-  
+
   margin: 0 auto;
   margin-top: 8%;
 }
@@ -142,18 +141,95 @@ hr {
   object-fit: contain;
 }
 .project div {
-    width: 40%;
+  width: 40%;
 }
 .project div p {
-    color: gray;
-    font-size: 0.9rem;
+  color: gray;
+  font-size: 0.9rem;
 }
-.project button {
-    width: 120px;
-    padding: 10px;
-    background-color: #6610f2;
-    border-radius: 10px;
-    color: #ffff;
-    border: none;
-    outline: none;
+button {
+  width: 120px;
+  padding: 10px;
+  background-color: #6610f2;
+  border-radius: 10px;
+  color: #ffff;
+  border: none;
+  outline: none;
+}
+
+/**** contact ****/
+.contact {
+  display: flex;
+  flex-direction: column;
+
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 8%;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.row-col {
+  display: flex;
+  flex-direction: column;
+  width: 47%;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  outline: none;
+}
+textarea {
+  margin-bottom: 20px;
+}
+input:focus {
+  outline: none;
+}
+label {
+  color: gray;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+}
+.contact h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(226, 232, 240);
+}
+footer ul {
+  list-style-type: none;
+}
+footer ul li {
+  display: inline;
+  margin-right: 20px;
+}
+li a {
+text-decoration: none;
+color: grey;
+font-size: 0.9rem;
+}
+.fa-twitter {
+  color: #00acee;
+}
+.fa-linkedin {
+color: #0e76a8;
+}
+footer p {
+  color: gray;
+  font-size: 0.9rem;
 }
