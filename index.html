@@ -3,38 +3,66 @@
 
 <head>
     <title>Dennis Ogbonnaya</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
     <script src="https://kit.fontawesome.com/b5d1e7be39.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="./styles//index.css" />
+    <link rel="shortcut icon" href="./public/icons/favicon.ico">
 </head>
 
 <body>
-    <header>
+    <header class="mobile-header">
+        <div class="menu-bar">
+            <span class="title">Dennis Ognonnaya</span>
+            <span class="burger">
+                <i class="fas fa-bars"></i>
+            </span>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li> <a href="#profile" class="nav-item">Profile</a></li>
+                <li><a href="#services" class="nav-item">Services</a></li>
+                <li><a href="#projects" class="nav-item">Projects</a></li>
+                <li><a href="#contact" class="nav-item">contact</a></li>
+            </ul>
+
+
+
+        </nav>
+    </header>
+
+    <header class="header">
         <div class="bio">
-            <img src="./public/images/dennis.png" loading="lazy" alt="Dennis Ogbonnaya" />
+            <img src="./public/images/cover.png" loading="lazy" alt="Dennis Ogbonnaya" />
             <span>Dennis Ognonnaya</span>
         </div>
 
         <nav>
 
             <ul>
-                <li>Profile</li>
-                <li>Services</li>
-                <li>Portfoilio</li>
-                <li>Contact</li>
+                <li> <a href="#profile" class="nav-item">Profile</a></li>
+                <li><a href="#services" class="nav-item">Services</a></li>
+                <li><a href="#projects" class="nav-item">Projects</a></li>
+                <li><a href="#contact" class="nav-item">contact</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <section class="profile">
+        <section id="profile">
             <img src="./public/images/dennis.jpg" loading="lazy" alt="Dennis Ogbonnaya" />
             <div class="about-skills">
                 <div class="about">
-                    <h3>Web and Mobile application Developer</h3>
-                    <small>
+                    <h3>Web & Mobile Software Developer</h3>
+                    <p>
                         Specialist in web and mobile app development. If you're a business seeking a web presence or are
-                        looking to hire, contact me here.
-                    </small>
+                        looking to hire, <a href="#contact">contact me here</a>
+                    </p>
+
                 </div>
+
                 <div class="skills">
                     <span>JavaScript</span>
                     <span>React</span>
@@ -43,7 +71,7 @@
                 </div>
             </div>
         </section>
-        <section class="services">
+        <section id="services">
 
             <div class="service">
                 <img src="./public/icons/desktop-solid.svg" alt="web development" />
@@ -62,28 +90,27 @@
                 <small>I maintain existing web and mobile projects</small>
             </div>
         </section>
-        <hr />
-        <section class="projects">
+
+        <section id="projects">
             <h3 class="section-heading">Projects</h3>
             <div class="project">
-                <img src="./public/images/dennis.jpg" loading="lazy" alt="Dennis Ogbonnaya" />
+                <img src="./public/images/miliki-web.png" loading="lazy" alt="Dennis Ogbonnaya" />
                 <div>
-                    <h3>Carrotsuite Space</h3>
+                    <h3>Miliki Patrons</h3>
                     <p>
-                        A platform for automating data collection and reporting throughout teams, operations and supply
-                        chains.
+                        A social club platform for event planing, booking and hosting, bookings for administrators
                     </p>
                     <button>Visit Site</button>
                 </div>
             </div>
             <hr />
             <div class="project">
-                <img src="./public/images/dennis.jpg" loading="lazy" alt="Dennis Ogbonnaya" />
+                <img src="./public/images/carrotsuite-mock.png" loading="lazy" alt="Dennis Ogbonnaya" />
                 <div>
-                    <h3>Carrotsuite Space</h3>
+                    <h3>Carrotsuite</h3>
                     <p>
-                        A platform for automating data collection and reporting throughout teams, operations and supply
-                        chains.
+                        A business management ERP software built to help businesses completely automate and digitize
+                        their operations workflow.
                     </p>
                     <button>Visit Site</button>
                 </div>
@@ -91,18 +118,47 @@
 
             <hr />
             <div class="project">
-                <img src="./public/images/dennis.jpg" loading="lazy" alt="Dennis Ogbonnaya" />
+                <img src="./public/images/it-sol.png" loading="lazy" alt="Dennis Ogbonnaya" />
                 <div>
-                    <h3>Carrotsuite Space</h3>
+                    <h3>It-Solutions</h3>
                     <p>
-                        A platform for automating data collection and reporting throughout teams, operations and supply
-                        chains.
+                        A freelancing platform for service providers and enterprise solutions
+                    </p>
+                    <button>Visit Site</button>
+                </div>
+            </div>
+            <div class="project">
+                <img src="./public/images/gds-vendor-man.png" loading="lazy" alt="Dennis Ogbonnaya" />
+                <div>
+                    <h3>Vendor Management</h3>
+                    <p>
+                        An ERP software for Vendor management
+                    </p>
+                    <button>Visit Site</button>
+                </div>
+            </div>
+            <div class="project">
+                <img src="./public/images/joe-link.png" loading="lazy" alt="Dennis Ogbonnaya" />
+                <div>
+                    <h3>Joelinks Computers</h3>
+                    <p>
+                        An e-commerce store for electronics gadgets and accessories
+                    </p>
+                    <button>Visit Site</button>
+                </div>
+            </div>
+            <div class="project">
+                <img src="./public/images/fast-food.png" loading="lazy" alt="Dennis Ogbonnaya" />
+                <div>
+                    <h3>Fast Food</h3>
+                    <p>
+                        A restaurant listing and food ordering and delivery web application
                     </p>
                     <button>Visit Site</button>
                 </div>
             </div>
         </section>
-        <section class="contact">
+        <section id="contact">
             <h2>Get in touch</h2>
             <form>
                 <div class="form-row">
@@ -124,7 +180,7 @@
                 <button>Submit</button>
             </form>
         </section>
-
+        <section></section>
     </main>
     <footer>
         <ul>
@@ -144,8 +200,10 @@
                     Twitter</a>
             </li>
         </ul>
-        <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script>
+        <p>Copyright &copy;
+            <script>document.write(new Date().getFullYear())</script>
     </footer>
+    <script src="./javaScript/index.js"></script>
 </body>
 
 </html>
