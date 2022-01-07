@@ -22,14 +22,11 @@
         </div>
         <nav class="menu">
             <ul>
-                <li> <a href="#profile" class="nav-item">Profile</a></li>
-                <li><a href="#services" class="nav-item">Services</a></li>
-                <li><a href="#projects" class="nav-item">Projects</a></li>
-                <li><a href="#contact" class="nav-item">contact</a></li>
+                <li class="link"> <a href="#profile" class="nav-item">Profile</a></li>
+                <li class="link"><a href="#services" class="nav-item">Services</a></li>
+                <li class="link"><a href="#projects" class="nav-item">Projects</a></li>
+                <li class="link"><a href="#contact" class="nav-item">contact</a></li>
             </ul>
-
-
-
         </nav>
     </header>
 
@@ -42,10 +39,10 @@
         <nav>
 
             <ul>
-                <li> <a href="#profile" class="nav-item">Profile</a></li>
-                <li><a href="#services" class="nav-item">Services</a></li>
-                <li><a href="#projects" class="nav-item">Projects</a></li>
-                <li><a href="#contact" class="nav-item">contact</a></li>
+                <li class="links"> <a href="#profile" class="nav-item">Profile</a></li>
+                <li class="links"><a href="#services" class="nav-item">Services</a></li>
+                <li class="links"><a href="#projects" class="nav-item">Projects</a></li>
+                <li class="links"><a href="#contact" class="nav-item">contact</a></li>
             </ul>
         </nav>
     </header>
@@ -62,7 +59,9 @@
                     </p>
                     <div class="contact-me">
                         <a href="#contact"><i class="far fa-id-card"></i> Contact me here</a>
-                        <a href="#contact"><i class="fas fa-download"></i> Download CV</a>
+                        <a
+                            href="https://github.com/DenkyOgbonnaya/portfolio/raw/master/public/cv/Dennis%20Ogbonnaya%20Resume.pdf"><i
+                                class="fas fa-download"></i> Download CV</a>
                     </div>
 
                 </div>
@@ -82,18 +81,17 @@
             <div class="service">
                 <img src="./public/icons/desktop-solid.svg" alt="web development" />
                 <h4>Web Development</h4>
-                <small>Awsome medium and enterprise web applications, responsive, dynamic,
-                    maintenable and scalable</small>
+                <small>Dynamic and responsive</small>
             </div>
             <div class="service">
                 <img src="./public/icons/mobile-alt-solid.svg" alt="web development" />
                 <h4>Mobile App Development</h4>
-                <small>Optimised for high performance</small>
+                <small>Fast load time</small>
             </div>
             <div class="service">
                 <img src="./public/icons/tools-solid.svg" alt="web development" />
                 <h4>Web and Mobile App maintenance</h4>
-                <small>I maintain existing web and mobile projects</small>
+                <small>Optimized for high performance</small>
             </div>
         </section>
 
@@ -146,25 +144,25 @@
             </div>
         </section>
         <section id="contact">
-            <h2>Get in touch</h2>
-            <form>
+            <h2>Get In Touch</h2>
+            <form action="https://formsubmit.co/denkyogb@gmail.com" method="POST">
                 <div class="form-row">
                     <div class="row-col">
                         <label>Email address</label>
-                        <input />
+                        <input name="email" required />
                     </div>
                     <div class="row-col">
                         <label>Name/Company</label>
-                        <input />
+                        <input name="company" required />
                     </div>
 
                 </div>
                 <div class="form-rnow">
                     <label>Message</label>
-                    <textarea rows="10"></textarea>
+                    <textarea name="message" required rows="10"></textarea>
 
                 </div>
-                <button>Submit</button>
+                <button class="submit-btn">Submit</button>
             </form>
         </section>
         <section></section>

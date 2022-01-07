@@ -71,8 +71,8 @@ nav ul li {
   cursor: pointer;
 }
 
-li a.active {
-  color: #fd7e14;
+.links.active a {
+  color: #e25822;
 }
 nav li a {
   text-decoration: none;
@@ -233,6 +233,7 @@ nav ul li a:hover {
 }
 .service small {
   opacity: 0.8;
+  align-self: center;
 }
 .section-heading {
   color: gray;
@@ -360,6 +361,13 @@ label {
 #contact h2 {
   text-align: center;
   margin-bottom: 20px;
+}
+#contact .submit-btn {
+  background: #e25822;
+  color: white;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  width: 30%;
 }
 
 footer {

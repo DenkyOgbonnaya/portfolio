@@ -6,7 +6,7 @@ const sections = document.getElementsByTagName("section");
 const burger = document.querySelector(".burger");
 const menu = document.querySelector(".menu");
 const menuItems = document.querySelectorAll(".nav-item");
-
+const links = document.querySelectorAll(".links");
 
 // Responsive header
 (function () {
@@ -42,6 +42,9 @@ const menuItems = document.querySelectorAll(".nav-item");
     })
   );
 })();
+(function () {
+  window.addEventListener("scroll", changeLinkState);
+})();
 window.onscroll = function () {
   "use strict";
 
@@ -67,45 +70,18 @@ window.onscroll = function () {
   }
   //setActiveNav();
 };
-function setActiveNav() {
-  for (let i = 0; i < sections.length - 1; i += 1) {
-    let section = sections[i];
-    let nextSection = sections[i + 1];
-    if (
-      document.body.scrollTop == getOffset(section) ||
-      document.documentElement.scrollTop == getOffset(section)
-    ) {
-      console.log(
-        getOffset(section),
-        "Nxt =>",
-        getOffset(nextSection),
-        document.documentElement.scrollTop
-      );
-      if (navItems[i]) navItems[i].classList.add("active");
-    } else {
-      console.log(
-        getOffset(section),
-        "false =>",
-        getOffset(nextSection),
-        document.documentElement.scrollTop
-      );
-      if (navItems[i]) navItems[i].classList.remove("active");
-    }
-  }
-}
+
 function getOffset(el) {
   const rect = el.getBoundingClientRect();
   return rect.top + window.scrollY;
 }
-/*function renderHeader() {
-  const TAB_SIZE = 768;
-  const WINDOW_WIDTH = window.innerWidth;
 
-  if (WINDOW_WIDTH > TAB_SIZE) {
-    header.classList.add("header--visible");
-    mobileHeader.classList.remove("mobile-header--visible");
-  } else {
-    header.classList.add("mobile-header--visible");
-    mobileHeader.classList.remove("header--visible");
+function changeLinkState() {
+  let index = sections.length;
+
+  while (--index && window.scrollY + 50 < sections[index].offsetTop) {
+    
   }
-}*/
+  links.forEach((link) => link.classList.remove("active"));
+    links[index].classList.add("active");
+}
