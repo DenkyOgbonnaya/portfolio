@@ -853,7 +853,9 @@ section .container {
   background: rgba(0, 0, 0, 0.6);
 }
 .portfolio .portfolio-wrap img {
-  max-height: 400px;
+  height: 180px;
+  width: 300px;
+  object-fit: cover;
 }
 
 .portfolio .portfolio-wrap::before {
