@@ -857,6 +857,12 @@ padding-bottom: 3rem;
   min-height: 700px;
   margin-bottom: 2rem;
   padding-bottom: 2rem !important;
+ 
+}
+@media (max-width: 768px) {
+  .portfolio .portfolio-wrap {
+    min-height: 300px;
+  }
 }
 .portfolio .portfolio-wrap img {
 
