@@ -23,7 +23,8 @@ main {
   display: flex;
   justify-content: space-between;
   padding: 10px 50px;
-  background-color: #191919 /*#6610f2*/;
+  /* background-color: #191919  */
+  /*#6610f2*/;
   background-image: linear-gradient(to right, #191919 #292929);
   position: sticky;
   top: 0;
@@ -89,7 +90,8 @@ nav ul li a:hover {
 }
 .mobile-header--visible {
   display: block;
-  background-color: #191919; /*#6610f2; */
+  /* background-color: #191919;  */
+  /*#6610f2; */
   background-image: linear-gradient(to right, #191919 #212121);
   width: 100%;
   position: sticky;
@@ -121,7 +123,7 @@ nav ul li a:hover {
   position: absolute;
   display: flex;
   justify-content: center;
-  background-color: #191919;
+  /* background-color: #191919; */
   top: 50px;
   width: 100%;
   transition: all 0.1s;
@@ -146,7 +148,7 @@ nav ul li a:hover {
   height: 500px;
   padding: 20px;
   position: relative;
-  background: #191919;
+  /* background: #191919; */
   clip-path: polygon(
     50% 0%,
     78% 0,
@@ -252,7 +254,8 @@ hr {
 #projects {
   display: flex;
   flex-direction: column;
-  background: #191919 /*rgb(226, 232, 240)*/;
+  /* background: #191919  */
+  /*rgb(226, 232, 240)*/;
   padding: 10px;
   margin: 0 auto;
   margin-top: 8%;
@@ -379,7 +382,7 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: rgb(226, 232, 240);
-  background: #191919;
+  /* background: #191919; */
 }
 footer ul {
   list-style-type: none;
@@ -409,7 +412,7 @@ footer p {
   #profile {
     flex-direction: column;
     align-items: center;
-    background-color: #191919;
+    /* background-color: #191919; */
     padding: 10px;
   }
   #profile img {

@@ -786,6 +786,9 @@ section .container {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+.portfolio-container {
+padding-bottom: 3rem;
+}
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
@@ -848,13 +851,15 @@ section .container {
 .portfolio .portfolio-wrap {
   transition: 0.3s;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   z-index: 1;
   background: rgba(0, 0, 0, 0.6);
+  min-height: 700px;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem !important;
 }
 .portfolio .portfolio-wrap img {
-  height: 180px;
-  width: 300px;
+
   object-fit: cover;
 }
 
@@ -946,7 +951,7 @@ section .container {
   color: #63eda3;
 }
 
-.portfolio .portfolio-wrap:hover::before {
+.portfolio .portfolio-wrap-mobile:hover::before {
   top: 0;
   left: 0;
   right: 0;
