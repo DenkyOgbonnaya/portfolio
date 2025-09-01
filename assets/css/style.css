@@ -109,6 +109,9 @@ h6 {
   flex-direction: column;
   gap: 1rem;
 }
+#header .about p {
+  max-width: 70%;
+}
 
 #header .skills {
   display: flex;
@@ -147,6 +150,9 @@ h6 {
   #header h2 {
     font-size: 20px;
     line-height: 30px;
+  }
+  #header .about p {
+    max-width: 100%;
   }
 
   #header .social-links {
@@ -228,7 +234,7 @@ h6 {
   position: relative;
 }
 
-.navbar li+li {
+.navbar li + li {
   margin-left: 30px;
 }
 
@@ -267,7 +273,7 @@ h6 {
 }
 
 .navbar a:hover:before,
-.navbar li:hover>a:before,
+.navbar li:hover > a:before,
 .navbar .active:before {
   visibility: visible;
   width: 25px;
@@ -276,7 +282,7 @@ h6 {
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover>a {
+.navbar li:hover > a {
   color: #fff;
 }
 
@@ -341,7 +347,7 @@ h6 {
   padding: 12px 20px;
 }
 
-.navbar-mobile li+li {
+.navbar-mobile li + li {
   margin: 0;
 }
 
@@ -787,7 +793,7 @@ section .container {
 # Portfolio
 --------------------------------------------------------------*/
 .portfolio-container {
-padding-bottom: 3rem;
+  padding-bottom: 3rem;
 }
 .portfolio .portfolio-item {
   margin-bottom: 30px;
@@ -857,7 +863,6 @@ padding-bottom: 3rem;
   min-height: 700px;
   margin-bottom: 2rem;
   padding-bottom: 2rem !important;
- 
 }
 @media (max-width: 768px) {
   .portfolio .portfolio-wrap {
@@ -865,7 +870,6 @@ padding-bottom: 3rem;
   }
 }
 .portfolio .portfolio-wrap img {
-
   object-fit: cover;
 }
 
@@ -1020,7 +1024,7 @@ padding-bottom: 3rem;
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li+li {
+.portfolio-details .portfolio-info ul li + li {
   margin-top: 10px;
 }
 
@@ -1117,7 +1121,7 @@ padding-bottom: 3rem;
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br+br {
+.contact .php-email-form .error-message br + br {
   margin-top: 25px;
 }
 
@@ -1185,7 +1189,7 @@ padding-bottom: 3rem;
   padding: 12px 15px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   background: #18d26e;
   border: 0;
   padding: 10px 30px;
@@ -1194,7 +1198,7 @@ padding-bottom: 3rem;
   border-radius: 4px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: #15bb62;
 }
 

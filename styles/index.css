@@ -24,7 +24,7 @@ main {
   justify-content: space-between;
   padding: 10px 50px;
   /* background-color: #191919  */
-  /*#6610f2*/;
+  /*#6610f2*/
   background-image: linear-gradient(to right, #191919 #292929);
   position: sticky;
   top: 0;
@@ -255,7 +255,7 @@ hr {
   display: flex;
   flex-direction: column;
   /* background: #191919  */
-  /*rgb(226, 232, 240)*/;
+  /*rgb(226, 232, 240)*/
   padding: 10px;
   margin: 0 auto;
   margin-top: 8%;
@@ -479,7 +479,7 @@ footer p {
   .project div h3 {
     margin-bottom: 5px;
   }
-  
+
   #contact {
     padding: 30px;
     width: 80%;
